@@ -11,7 +11,7 @@ function App() {
     <HashRouter>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/evergreen-react" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/why-us" element={<WhyUs />} />
       </Routes>
