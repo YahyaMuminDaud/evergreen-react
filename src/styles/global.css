@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --olive:       #6b7c1e;
+  --olive-dark:  #4a5614;
+  --olive-light: #8fa828;
+  --blue:        #1a6fb5;
+  --blue-light:  #3590d8;
+  --brown:       #7a4020;
+  --navy:        #1a2d4a;
+  --navy-dark:   #0f1d30;
+  --cream:       #f8f6f0;
+  --white:       #ffffff;
+  --text-dark:   #1c1c1c;
+  --text-mid:    #3e3e3e;
+  --text-muted:  #6a6a6a;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* SHARED SECTION STYLES */
+section { padding: 80px 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-label {
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--blue); font-weight: 700; margin-bottom: 0.5rem;
+}
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  color: var(--navy); margin-bottom: 1.25rem; line-height: 1.2;
+}
+.divider {
+  width: 50px; height: 3px;
+  background: var(--olive); border-radius: 2px; margin: 0 0 2rem;
+}
+
+/* SHARED BUTTONS */
+.btn-primary {
+  background: var(--olive); color: white;
+  padding: 14px 32px; border-radius: 4px; text-decoration: none;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 0.2s, transform 0.15s; display: inline-block; border: none; cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+.btn-primary:hover { background: var(--olive-dark); transform: translateY(-2px); }
+
+.btn-outline {
+  background: transparent; color: var(--blue-light);
+  padding: 14px 32px; border-radius: 4px; text-decoration: none;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1.5px solid var(--blue-light);
+  transition: background 0.2s, transform 0.15s; display: inline-block; cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+.btn-outline:hover { background: rgba(53,144,216,0.1); transform: translateY(-2px); }
+
+.btn-white {
+  background: white; color: var(--olive-dark);
+  padding: 14px 36px; border-radius: 4px; text-decoration: none;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase;
+  display: inline-block; transition: transform 0.15s, background 0.2s; border: none; cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+.btn-white:hover { transform: translateY(-2px); background: var(--cream); }
+
+/* BADGES */
+.badge {
+  display: inline-block; font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; font-weight: 700; padding: 4px 10px;
+  border-radius: 3px; margin-bottom: 0.75rem;
+}
+.badge-green { background: rgba(107,124,30,0.13); color: var(--olive-dark); }
+.badge-blue  { background: rgba(26,111,181,0.12);  color: #1a5a9a; }
+.badge-brown { background: rgba(122,64,32,0.12);   color: var(--brown); }
+
+/* AREA STRIP */
+.area-strip { background: var(--navy); padding: 18px 2rem; text-align: center; }
+.area-strip p { color: #7a8fa0; font-size: 13px; letter-spacing: 0.06em; }
+.area-strip strong { color: var(--olive-light); }
+
+/* CTA BANNER */
+.cta-section { background: var(--olive); text-align: center; padding: 72px 2rem; }
+.cta-section h2 {
+  font-family: 'Cinzel', serif; font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: white; margin-bottom: 0.75rem;
+}
+.cta-section p { color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 480px; margin: 0 auto 2rem; }
+.cta-number { margin-top: 1.5rem; font-family: 'Cinzel', serif; font-size: 1.8rem; color: white; letter-spacing: 0.1em; }
+
+/* PAGE HERO (inner pages) */
+.page-hero {
+  background: var(--navy-dark); padding: 80px 2rem 70px;
+  position: relative; overflow: hidden; text-align: center;
+}
+.page-hero-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(107,124,30,0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(26,111,181,0.09) 0%, transparent 50%);
+}
+.page-hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(107,124,30,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107,124,30,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.page-hero-content { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+.page-hero .section-label { color: var(--blue-light); }
+.page-hero .section-title { color: var(--white); margin-bottom: 1rem; }
+.page-hero p { color: #8fa8be; font-size: 1.05rem; font-weight: 300; }
+
+/* CONTACT CARDS */
+.contact-section { background: var(--cream); }
+.contact-cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem; margin-top: 2.5rem;
+}
+.contact-card {
+  background: var(--white); border: 1px solid #dedad2; border-radius: 8px;
+  padding: 2rem 1.75rem; display: flex; flex-direction: column;
+  align-items: flex-start; gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.08); }
+.c-icon-lg {
+  width: 52px; height: 52px; background: rgba(107,124,30,0.1);
+  border: 1.5px solid rgba(107,124,30,0.3); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;
+}
+.c-icon-lg svg { width: 22px; height: 22px; }
+.c-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); font-weight: 700; }
+.c-val-lg { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--navy); }
+.c-note { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-top: 0.25rem; }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up   { animation: fadeUp 0.85s ease both; }
+.fade-up-1 { animation: fadeUp 0.85s 0.1s ease both; }
+.fade-up-2 { animation: fadeUp 0.85s 0.2s ease both; }
+.fade-up-3 { animation: fadeUp 0.85s 0.3s ease both; }
+.fade-up-4 { animation: fadeUp 0.85s 0.4s ease both; }
+.fade-up-5 { animation: fadeUp 0.85s 0.5s ease both; }
+
+@media (max-width: 700px) {
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 11px; }
+}
