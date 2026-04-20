@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/YOUR-REPO-NAME/static/css/main.7e0cb05e.css",
-    "main.js": "/YOUR-REPO-NAME/static/js/main.304ee8f0.js",
-    "static/media/EVERGREEN-w.png": "/YOUR-REPO-NAME/static/media/EVERGREEN-w.5ef667270f80176ba4a0.png",
-    "static/media/EVERGREEN-og.png": "/YOUR-REPO-NAME/static/media/EVERGREEN-og.15f03ad6d63ae935d8e0.png",
-    "index.html": "/YOUR-REPO-NAME/index.html",
-    "main.7e0cb05e.css.map": "/YOUR-REPO-NAME/static/css/main.7e0cb05e.css.map",
-    "main.304ee8f0.js.map": "/YOUR-REPO-NAME/static/js/main.304ee8f0.js.map"
+    "main.css": "/evergreen-react/static/css/main.7e0cb05e.css",
+    "main.js": "/evergreen-react/static/js/main.078ceee1.js",
+    "static/media/EVERGREEN-w.png": "/evergreen-react/static/media/EVERGREEN-w.5ef667270f80176ba4a0.png",
+    "static/media/EVERGREEN-og.png": "/evergreen-react/static/media/EVERGREEN-og.15f03ad6d63ae935d8e0.png",
+    "index.html": "/evergreen-react/index.html",
+    "main.7e0cb05e.css.map": "/evergreen-react/static/css/main.7e0cb05e.css.map",
+    "main.078ceee1.js.map": "/evergreen-react/static/js/main.078ceee1.js.map"
   },
   "entrypoints": [
     "static/css/main.7e0cb05e.css",
-    "static/js/main.304ee8f0.js"
+    "static/js/main.078ceee1.js"
   ]
 }
