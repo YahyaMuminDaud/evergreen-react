@@ -8,7 +8,7 @@ import WhyUs from './pages/WhyUs';
 
 function App() {
   return (
-    <BrowserRouter basename="/evergreen-react">
+    <BrowserRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
